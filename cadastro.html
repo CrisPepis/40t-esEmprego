@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40tões.Emprego</title>
+    <Style>
+        h1{
+            text-align: center;
+        }
+body{
+    background-color:#3db8ff;
+            font-family: Arial, sans-serif;
+}
+button, .button{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blue;
+            border:1px solid white;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 6px;  
+             }
+        button:hover.button:hover{
+            color: black;background-color: white;
+            border:1px solid black;            
+ } 
+ div img {
+    float: left; /* alinha a imagem à esquerda */
+    margin-right: 20px; /* adiciona uma margem à direita da imagem */
+}
+ </Style>
+ <title>Cadastro de Usuário</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+   <style>
+    .formulario {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+ width: 100%;
+ padding: 0%;
+}
+   </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <header>
+ <div class="menu">
+        
+                <a class="button Login" href="login.html" target="_blank" style="vertical-align: middle;"> <span> Login </span> </a>
+                        
+                <a class="button Cadastro" href="cadastro.html" target="_blank" style="vertical-align: middle;"> <span> Cadastro </span> </a>
+               
+                <a class="button Curriculum" href="curriculum.html"  target="_blank"   style="vertical-align: middle;"><span>Curriculum </span> </a> 
+
+                 <a class="button Vagas " href="vagas.html" target="_blank" style="vertical-align: middle;"> <span> Vagas </span></a>
+                        
+                <a class="button Anunciar" href="projeto.inicial.html"  target="_blank"   style="vertical-align: middle;"><span>Anunciar  </span> </a> 
+                 
+                 <img src="40toes.JPG" alt="">
+    </header>
+     </div>
+     <h1>
+    Cadastro de Usuário
+     </h1>
+     <form method="post" action="processa-cadastro.php" class="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        
+        <label for="sexo">Sexo:</label>
+        <select name="sexo" id="sexo">
+            <option value="m">Masculino</option>
+            <option value="f">Feminino</option>
+            <option value="o">Outro</option>
+        </select>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+        
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
